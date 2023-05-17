@@ -1,36 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="style.css"> 
+    <title>container</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <header>
+    <div class="main">
+        <header class="header">
             <h1>Hi there! I'm JONATHAN </h1>
-            <nav>
-                <li><a class="active" href="#home">Home</a></li>
-                <li><a href="#news">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </nav><br>
-
-            <div class="imageContainer"><img src="My Profile picture.jpg" alt="A profile picture for my Portifolio" width="350px" height="400px" ></div>
-            
         </header>
-        
-    
-        <main>
-            <br>
-            <p>I am a programmer and I develop
-                Websites.<br> I have knowledge in C, C++, JAVA, and PYTHON</p>
-
-            </main>
-    
-        <footer></footer>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Skills.html">Skills</a></li>
+        </ul>
+        <div class="box1">
+            <div class="box3">
+                <p>I'm a Mzuzu University intellectual studying ICT. <br>
+                    I've been studying programming for two years and <br> I develop Websites.
+                    I have knowledge in C, C++, <br> PYTHON, and JAVA</p>
+            </div>
+            <div class="box2">
+                <a href="https://www.cprogramming.com">
+                    <img style="height: 100px;" src="c-programming.png" alt="C-programming icon"></a>
+            </div>
+            <div class="box2">
+                <a href="https://www.c++.com">
+                    <img style="height: 100px;" src="c++.png" alt="C++ icon"></a>
+            </div>
+            <div class="box2">
+                <a href="https://www.pythonprogramming.com">
+                    <img style="height: 100px;" src="python.png" alt="PYTHON programming icon"></a>
+            </div>
+            <div class="box2">
+                <a href="https://www.javaprogramming.com">
+                    <img style="height: 100px;" src="java.png" alt="JAVA programming icon"></a>
+            </div>
+            <div class="box3">
+                <p>I learn most of my ICT related skills at <br>
+                    <a href="https://www.w3schools.com/">W3Schools.com</a> and <a
+                        href="https://www.stackoverflow.com/">stackoverflow.com</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="document.location='Skills.html'"> <span style="color: white;">view
+                            more</span></button>
+                </p>
+            </div>
+        </div>
+        <div class="box4">
+            <img style="border-radius: 100px 2px; border: 5px solid orange;" src="My Profile picture.jpg"
+                alt="A profile picture for my Portifolio" width="350px" height="400px">
+        </div>
+        <footer>
+            <div class="header">
+                <i class="fas fa-phone-square-alt"> Contact: +265 991 608 070</i> <br>
+                <i class="fab fa-facebook-square"> Facebook: Jonathan Escober Maguru</i> <br>
+                <i class="fas fa-phone-square-alt"> Gmail: jonathanmaguru@gmail.com</i> <br>
+                <i class="fas fa-whatsapp"> Whatsapp: +265 991 608 070</i>
+            </div>
+            <div class="header">
+                <ul><a href="index.html">Home</a></ul>
+                <ul><a href="Skills.html">Skills</a></ul>
+            </div>
+        </footer>
     </div>
-
 </body>
+
 </html>
