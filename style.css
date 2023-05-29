@@ -1,7 +1,10 @@
 *{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
 }
 .header {
+    margin-top: 20px;
+    margin-bottom: 20px;
     width: 45%;
     height: auto;
 }.nav {
@@ -14,20 +17,25 @@
     text-align: center;
 }
 
-li {
+li{
     display: inline;
+    border: 2px solid orange;
+    padding: 5px;
+    border-radius: 10px;
 }
 
 li a {
     display: inline;
     color: orange;
     text-align: center;
-    padding: 14px 16px;
+    padding: 5px 17px;
     text-decoration: none;
+    border-radius: 10px;
 }
 
 li a:hover {
-    background-color: #111;
+    background-color:indigo;
+    transition: 1.5s;
 }
 button {
     background-color: transparent;
@@ -40,6 +48,7 @@ button {
 button:hover {
     background-color: orange;
     border: none;
+    transition: 1.5s;
 }
 .main {
     width: auto;
@@ -70,6 +79,7 @@ p {
     flex-wrap: wrap;
     border-left: 5px solid orange;
     border-radius: 10px;
+    box-shadow: 0px 0px 8px #000000;
 }
 .box2 {
     width: 25%;
@@ -77,6 +87,7 @@ p {
     margin: 20px;
     padding: 5px;
     border-radius: 10px;
+    box-shadow: 1px 1px 10px orange
 }
 .box3 {
     width: 90%;
@@ -92,10 +103,33 @@ p {
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+.box5{
+    width: 45%;
+    height: auto;
+    margin: 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-left: 5px solid orange;
+    border-radius: 10px;
+}
+.projectsPictures{
+    width: 45%;
+    height: auto;
+    margin: 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-left: 5px solid orange;
+    box-shadow: 0px 0px 8px #000000;
+    border-radius: 10px;
+}
 footer{
-    height: 100px;
-    width: 100%;
-    background-color: gray;
+    height: 100%;
+    width: auto;
+    background-color:rgba(0, 0, 0, 0.8);
     padding: 20px;
     display: flex;
     justify-content: space-evenly;
@@ -107,7 +141,6 @@ footer{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    background-color: #0e0328;
     background-image:  url("keyboard.jpg");
 }
 .projectsContainer {
@@ -116,7 +149,6 @@ footer{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    background-color: #0e0328;
 }
 .projectsBox {
     width: 100%;
@@ -130,6 +162,98 @@ footer{
     padding-left: 30px;
     border-left: 5px solid orange;
     border-radius: 10px;
+    margin-bottom: 20px;
+}
+.slideshow-container {
+    position: relative;
+    width: 100%;
 }
 
+.slideshow-images img {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.slideshow{
+    width: 45%;
+    height: 400px;
+    margin: 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-left: 5px solid orange;
+    border-radius: 10px;
+    box-shadow: 0px 1px 5px orange;
+}
+.contactContainer{
+    width: 45%;
+    height: 400px;
+    margin: 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    box-shadow: 0px 1px 5px orange;
+}
+a{
+    color:ghostwhite;
+    text-decoration: none;
+}
 
+input {
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid orange;
+    width: 97%;
+    color: orange;
+    border-radius: 3px;
+}
+label{
+    color: orange;
+}
+
+textarea {
+    width: 100%;
+    border-radius: 3px;
+    resize: none;
+    color: orange;
+    background-color: transparent;
+    border: 1px solid orange;
+}
+
+input[type="submit"] {
+    color: white;
+    background-color: orange;
+    cursor: pointer;
+}
+.fa {
+    font-size: 180%;
+}
+
+.fa2 {
+    color: orange;
+    font-size: 280%;
+}
+i{
+    margin-top: 20px;
+    font-size: 200%;
+    color: orange;
+}.footerbox {
+    width: 20%;
+    height: 150px;
+    padding: 10px;
+    letter-spacing: 2PX;
+    border-radius: 3px;
+    text-align: center;
+    transition: 0.5s;
+    box-shadow: 0px 0px 5px #000000;
+    overflow: hidden;
+
+}
