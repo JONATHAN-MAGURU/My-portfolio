@@ -87,7 +87,9 @@ p {
     margin: 20px;
     padding: 5px;
     border-radius: 10px;
-    box-shadow: 1px 1px 10px orange
+    box-shadow: 1px 1px 10px orange;
+    background-color:#0e0328;
+    opacity: 0.8;
 }
 .box3 {
     width: 90%;
@@ -180,7 +182,7 @@ footer{
 }
 .slideshow{
     width: 45%;
-    height: 400px;
+    height: 450px;
     margin: 20px;
     padding: 5px;
     display: flex;
@@ -192,14 +194,21 @@ footer{
 }
 .contactContainer{
     width: 45%;
-    height: 400px;
+    height: 450px;
     margin: 20px;
-    padding: 5px;
+    padding: 10px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     border-radius: 10px;
-    box-shadow: 0px 1px 5px orange;
+    box-shadow: 0px 0px 8px #000000;
+}
+.contact{
+    width: 100%;
+    height: 100px;
+    box-shadow: 0px 0px 8px #000000;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 a{
     color:ghostwhite;
@@ -255,5 +264,204 @@ i{
     transition: 0.5s;
     box-shadow: 0px 0px 5px #000000;
     overflow: hidden;
+
+}
+.progressBarsContainer{
+    width: 95%;
+    height: 450px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 20px;
+    box-shadow: 0px 0px 5px #000000;
+}
+.skillsBox{
+    width: 20%;
+    height: 150px;
+    margin: 20px;
+    border-radius: 10px;
+    /*box-shadow: 0px 0px 5px #000000;*/
+    position:relative;
+}
+.outer{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+               -6px -6px 10px -1px #000000;
+}
+.inner{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+                inset -4px -4px 6px -1px #000000,
+                -0.5px -0.5px 0px #000000,
+                0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+                0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+#number{
+    font-weight: 600;
+    color: orange;
+}
+#number1{
+    font-weight: 600;
+    color: orange;
+}
+#number2{
+    font-weight: 600;
+    color: orange;
+}
+#number3{
+    font-weight: 600;
+    color: orange;
+}
+#number4{
+    font-weight: 600;
+    color: orange;
+}
+#number5{
+    font-weight: 600;
+    color: orange;
+}
+#number6{
+    font-weight: 600;
+    color: orange;
+}
+#number7{
+    font-weight: 600;
+    color: orange;
+}
+#number8{
+    font-weight: 600;
+    color: orange;
+}
+circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 372;
+    stroke-dashoffset: 372;
+    animation: anim 2s linear forwards;
+}
+.circle1{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 372;
+    stroke-dashoffset: 372;
+    animation: anim1 2s linear forwards;
+}
+.circle2{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 372;
+    stroke-dashoffset: 372;
+    animation: anim2 2s linear forwards;
+}
+.circle3{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 372;
+    stroke-dashoffset: 372;
+    animation: anim3 2s linear forwards;
+}
+.circle4{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 372;
+    stroke-dashoffset: 372;
+    animation: anim4 2s linear forwards;
+}
+.circle5{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 372;
+    stroke-dashoffset: 372;
+    animation: anim5 2s linear forwards;
+}
+.circle6{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 372;
+    stroke-dashoffset: 372;
+    animation: anim6 2s linear forwards;
+}
+.circle7{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 372;
+    stroke-dashoffset: 372;
+    animation: anim7 2s linear forwards;
+}
+.circle8{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 372;
+    stroke-dashoffset: 372;
+    animation: anim8 2s linear forwards;
+}
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+@keyframes anim{
+    100%{
+        stroke-dashoffset: 298;
+    }
+
+}
+@keyframes anim1{
+    100%{
+        stroke-dashoffset: 279;
+    }
+
+}
+@keyframes anim2{
+    100%{
+        stroke-dashoffset: 130;
+    }
+
+}
+@keyframes anim3{
+    100%{
+        stroke-dashoffset: 167;
+    }
+
+}
+@keyframes anim4{
+    100%{
+        stroke-dashoffset: 93;
+    }
+
+}
+@keyframes anim5{
+    100%{
+        stroke-dashoffset: 167;
+    }
+
+}
+@keyframes anim6{
+    100%{
+        stroke-dashoffset: 241;
+    }
+
+}
+@keyframes anim7{
+    100%{
+        stroke-dashoffset: 186;
+    }
 
 }
