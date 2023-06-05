@@ -33,9 +33,8 @@ li a {
     border-radius: 10px;
 }
 
-li a:hover {
+.nav :hover {
     background-color:indigo;
-    transition: 1.5s;
 }
 button {
     background-color: transparent;
@@ -166,6 +165,30 @@ footer{
     border-radius: 10px;
     margin-bottom: 20px;
 }
+.pictureBox{
+    width: 45%;
+    height: 450px;
+    margin: 30px;
+    box-shadow: 0px 0px 8px #000000;
+    border-radius: 10px;
+} 
+.pictureBox2{
+    width: 100%;
+    height: 450px;
+    margin: 30px;
+    box-shadow: 0px 0px 8px #000000;
+    border-radius: 10px;
+} 
+.pictureBox:hover {
+    box-shadow: 0px 0px 8px orange;
+}
+.pictureBox2:hover {
+    box-shadow: 0px 0px 8px orange;
+}
+.desc {
+    padding: 15px;
+    text-align: center;
+  }
 .slideshow-container {
     position: relative;
     width: 100%;
@@ -188,9 +211,8 @@ footer{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    border-left: 5px solid orange;
     border-radius: 10px;
-    box-shadow: 0px 1px 5px orange;
+    box-shadow: 0px 1px 5px #000000;
 }
 .contactContainer{
     width: 45%;
