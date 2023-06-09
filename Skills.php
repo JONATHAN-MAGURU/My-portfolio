@@ -11,9 +11,27 @@
 </head>
 
 <body>
+<?php
+$servername = "localhost"; 
+$username = "root";
+$password = "";
+$dbname = "my_portifolio";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+?>
+
+<?php
+$sql = "SELECT * FROM skills";
+$result = $conn->query($sql);
+?>
     <div class="main">
         <header class="header">
-            <div style="text-align: left;" class="nav">
+            <div style="text-align: left;" class="IconContainer">
                 <i class="fa fa-facebook"></i>
                 <i class="fa fa-twitter"></i>
                 <i class="fa fa-instagram"></i>
@@ -22,10 +40,10 @@
             </div>
         </header>
         <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">contact</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="Skills.php">Skills</a></li>
+            <li><a href="projects.php">Projects</a></li>
+            <li><a href="contact.php">contact</a></li>
         </ul>
         <div class="contact">
             <h1>SKILLS</h1>
@@ -204,6 +222,65 @@
                 <p style="font-size: small ;">HTML</p>
             </div>
         </div>
+        <div class="skillsDec">
+            <div class="con_pic">
+                <div class="skillsPicture">
+                    <a href="https://www.programiz.com/">
+                        <img style="height: 100px;" src="c-programming.png" alt="C-programming icon">
+                    </a>
+                </div>
+                <div class="skillsPicture">
+                    <a href="https://www.programiz.com/">
+                        <img style="height: 100px;" src="c++.png" alt="C++ icon">
+                    </a>
+                </div>
+                <div class="skillsPicture">
+                    <a href="https://www.programiz.com/">
+                        <img style="height: 100px;" src="python.png" alt="PYTHON programming icon">
+                    </a>
+                </div>
+                <div class="skillsPicture">
+                    <a href="https://www.programiz.com/">
+                        <img style="height: 100px;" src="javascript-logo.png" alt="Javascript icon">
+                    </a>
+                </div>
+                <div class="skillsPicture">
+                    <a href="https://www.programiz.com/">
+                        <img style="height: 100px;" src="java.png" alt="JAVA programming icon">
+                    </a>
+                </div>
+                <div class="skillsPicture">
+                    <a href="https://www.programiz.com/">
+                        <img style="height: 100px;" src="CSS-LOGO.png" alt="JAVA programming icon">
+                    </a>
+                </div>
+                <div class="skillsPicture">
+                    <a href="https://www.programiz.com/">
+                        <img style="height: 100px;" src="php-logo.jpg" alt="JAVA programming icon">
+                    </a>
+                </div>
+                <div class="skillsPicture">
+                    <a href="https://www.programiz.com/">
+                        <img style="height: 100px;" src="html-logo.png" alt="JAVA programming icon">
+                    </a>
+                </div>    
+            </div>
+            <div class="con_dis">
+            <?php
+                if ($result) {
+                    while ($row = $result->fetch_assoc()) {
+                        $SKILL_DECRIPTION = $row["SKILL_DECRIPTION"];
+                        echo "<div class=\"skillsDescription\">";
+                        echo "<p>$SKILL_DECRIPTION</p>";
+                        echo "</div>";
+                    }
+                } else {
+                    echo "Error: " . $conn->error;
+                }
+            ?>
+            </div>
+           
+        </div>
     </div>
     <footer>
         <div class="footerbox">
@@ -218,10 +295,10 @@
         <div class="footerbox">
             <i style="font-size: 280%;" class="fa fa-phone fa2"></i>
             <p> PHONE NUMBER <br> 0991608070</P>
-        <a style="font-size: x-small;" href="index.html"> <i class="fa fa-home"></i> Home</a>
-        <a style="font-size: x-small;" href="Skills.html"><i class="fa fa-briefcase"></i>Skills</a>
-        <a style="font-size: x-small;" href="projects.html"><i class="fa fa-tasks"></i>Projects</a>
-        <a style="font-size: x-small;" href="contact.html"><i class="fa fa-id-card"></i>Contact</a>
+        <a style="font-size: x-small;" href="index.php"> <i class="fa fa-home"></i> Home</a>
+        <a style="font-size: x-small;" href="Skills.php"><i class="fa fa-briefcase"></i>Skills</a>
+        <a style="font-size: x-small;" href="projects.php"><i class="fa fa-tasks"></i>Projects</a>
+        <a style="font-size: x-small;" href="contact.php"><i class="fa fa-id-card"></i>Contact</a>
         </div>
         <div class="footerbox">
                 <p>LOCATION MAP</p>

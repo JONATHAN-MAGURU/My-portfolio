@@ -13,7 +13,7 @@
 <body>
     <div class="main">
         <header class="header">
-            <div  class="nav">
+            <div  class="IconContainer">
                 <a href="https://web.facebook.com/jonathann.maguru"><i class="fa fa-facebook"></i></a>
                 <i class="fa fa-twitter"></i>
                 <i class="fa fa-instagram"></i>
@@ -22,10 +22,10 @@
             </div>
         </header>
         <ul style="list-style-type: none;" class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">contact</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="Skills.php">Skills</a></li>
+            <li><a href="projects.php">Projects</a></li>
+            <li><a href="contact.php">contact</a></li>
         </ul>
         <div class="contact">
             <h1>Hi there! I'm JONATHAN </h1>
@@ -57,7 +57,7 @@
                     <a href="https://www.w3schools.com/">W3Schools.com</a> and <a
                         href="https://www.stackoverflow.com/">stackoverflow.com</a>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <button onclick="document.location='Skills.html'"> <span style="color: white;">view
+                    <button onclick="document.location='Skills.php'"> <span style="color: white;">view
                             more</span></button>
                 </p>
             </div>
@@ -67,7 +67,7 @@
                 src="My Profile picture.jpg" alt="A profile picture for my Portifolio" width="350px" height="400px">
         </div>
         <div class="slideshow">
-            <p class="header" style="text-align: center;"><a href="projects.html">FEATURED PROJECTS</a></p>
+            <p class="header" style="text-align: center;"><a href="projects.php">FEATURED PROJECTS</a></p>
             <br>
             <div class="slideshow-container">
                 <div class="slideshow-images">
@@ -75,20 +75,19 @@
             </div>
         </div>
         <div class="contactContainer">
-
-            <form action="">
-                <p class="nav" style="text-align: right;"><a href="contact.html">CONTACT</a></p>
-                <br>
-                <label for="name">Name</label> <br>
-                <input type="text" name="" id=""> <br>
-                <label for="email">Email</label> <br>
-                <input type="email" name="" id=""> <br>
-                <label for="number">Phone Number</label> <br>
-                <input type="number"> <br>
-                <label for="">Write message</label> <br>
-                <textarea name="" id="" cols="60" rows="5"></textarea>
-                <input type="submit" name="" id="" value="SUBMIT">
-            </form>
+        <form action="mysite.php" method="post"> 
+            <p class="IconContainer" style="text-align: right;"><a href="contact.html">CONTACT</a></p>
+            <br>
+            <label for="Name">Name</label> <br>
+            <input type="text" name="Name" id="Name" required> <br>
+            <label for="Email">Email</label> <br>
+            <input type="email" name="Email" id="Email" required> <br>
+            <label for="phoneNumber">Phone Number</label> <br>
+            <input type="number" name="phoneNumber" id="phoneNumber" required> <br>
+            <label for="Message">Write message</label> <br>
+            <textarea name="Message" id="Message" cols="60" rows="5" required></textarea>
+            <input type="submit" name="" id="" value="SUBMIT">
+        </form>
         </div>
         </div>
     </div>
@@ -105,10 +104,10 @@
         <div class="footerbox">
             <i style="font-size: 280%;" class="fa fa-phone fa2"></i>
                 <p> PHONE NUMBER <br> 0991608070</P>
-            <a style="font-size: x-small;" href="index.html"> <i class="fa fa-home"></i> Home</a>
-            <a style="font-size: x-small;" href="Skills.html"><i class="fa fa-briefcase"></i>Skills</a>
-            <a style="font-size: x-small;" href="projects.html"><i class="fa fa-tasks"></i>Projects</a>
-            <a style="font-size: x-small;" href="contact.html"><i class="fa fa-id-card"></i>Contact</a>
+            <a style="font-size: x-small;" href="index.php"> <i class="fa fa-home"></i> Home</a>
+            <a style="font-size: x-small;" href="Skills.php"><i class="fa fa-briefcase"></i>Skills</a>
+            <a style="font-size: x-small;" href="projects.php"><i class="fa fa-tasks"></i>Projects</a>
+            <a style="font-size: x-small;" href="contact.php"><i class="fa fa-id-card"></i>Contact</a>
         </div>
         <div class="footerbox">
                 <p>LOCATION MAP</p>
